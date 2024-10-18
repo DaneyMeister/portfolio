@@ -280,8 +280,19 @@ footer p{
 }
 /* ============================================================= */
 /* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
-@media screen and (min-width: 1921px) {
-    
+@media screen and (min-width: 1800px) {
+    .container-hero {
+        margin: 8% 5% 1% 5%;
+    }
+
+    video {
+        height: 36em;
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding: 1% 10% 1% 10%;
+    }
 }
     
 /* ============================================================= */
