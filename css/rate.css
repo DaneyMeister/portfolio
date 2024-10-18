@@ -6,6 +6,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button, input {
@@ -98,6 +99,7 @@ body{
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
 }
 
 .sidebar a:hover {
@@ -147,6 +149,8 @@ form .submit a {
     padding: 5px;
     transition: all 0.3s ease;
     font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
 }
 
 form .submit a:hover {
@@ -292,6 +296,8 @@ footer p{
         flex-direction: column;
         overflow: hidden;
         transition: all 150ms ease-in-out;
+        font-weight: bold;
+        font-family: "Outfit", sans-serif;
     }
 
     ul li a:hover {
@@ -387,6 +393,37 @@ footer p{
 @media screen and (min-width: 1800px) {
     .container-hero {
         margin: 8% 5% 1% 5%;
+    }
+
+    .rating .fas {
+        font-size: 50px;
+        margin: 10px;
+    }
+
+    .rating {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+    
+    input {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        font-size: 1.5rem;
+        height: 10rem;
+    }
+
+    textarea {
+        font-size: 1rem;
+        height: 6rem;
+    }
+
+    form .submit a {
+        font-size: 2.5rem;
     }
 
     footer {

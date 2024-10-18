@@ -6,6 +6,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button {
@@ -119,6 +120,7 @@ body{
     transition: all 150ms ease-in-out;
     text-decoration: none;
     text-align: center;
+    font-family: 'Outfit', sans-serif;
 }
 
 .button:first-child {
@@ -220,6 +222,7 @@ footer p{
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        font-weight: bold;
     }
 
     ul li a:hover {
@@ -293,7 +296,24 @@ footer p{
 /* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
 @media screen and (min-width: 1800px) {
     .container {
-        margin: 8% 5% 2% 5%;
+        margin: 13% 5% 5% 5%;
+    }
+
+    .content h1{
+        font-size: 4rem;
+    }
+
+    .content p{
+        font-size: 2rem;
+    }
+    
+    .hero-image2 img{
+        max-width: 80%;
+    }
+
+    .button {
+        font-size: 2.5rem;
+        width: 17rem;
     }
 
     footer {

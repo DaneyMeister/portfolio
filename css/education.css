@@ -6,6 +6,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button {
@@ -94,6 +95,7 @@ body{
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
 }
 
 .sidebar a:hover {
@@ -157,6 +159,8 @@ body{
     padding: 5px;
     transition: all 150ms ease-in-out;
     text-align: center;
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
 }
 
 .container-hero .card a:hover {
@@ -184,13 +188,18 @@ body{
     margin-bottom: .5rem;
 }
 
+.cards-section a{
+    color: white;
+    text-decoration: none;
+}
+
 .cards-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
-.cards-section .card{
+.cards-section .card, .cards-section a .card{
     background-color: #27272a;
     padding: .5rem;
     border: 2px solid transparent;
@@ -342,6 +351,8 @@ footer p{
         flex-direction: column;
         overflow: hidden;
         transition: all 150ms ease-in-out;
+        font-weight: bold;
+        font-family: "Outfit", sans-serif;
     }
 
     ul li a:hover {
@@ -423,6 +434,34 @@ footer p{
         margin: 14% 5% 2% 5%;
     }
 
+    .container-hero span {
+        font-size: 3rem;
+    }
+
+    .header{
+        font-size: 3rem;
+    }
+
+    .subheader{
+        font-size: 2rem;
+    }
+
+    .container-hero .card a {
+        font-size: 1.5rem;
+    }
+
+    .cards-section .card span{
+        font-size: 2rem;
+    }
+
+    .cards-section .card h2{
+        font-size: 1.5rem;
+    }
+
+    .cards-section .card h3 {
+        font-size: 1.2rem;
+    }
+
     .socials {
         display: flex;
         justify-content: center;
@@ -435,6 +474,10 @@ footer p{
 @media screen and (min-width: 1800px) {
     .container-hero {
         margin: 8% 5% 2% 5%;
+    }
+
+    .container-hero .card a {
+        font-size: 2rem;
     }
 
     footer {

@@ -6,6 +6,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button {
@@ -94,6 +95,7 @@ body{
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
 }
 
 .sidebar a:hover {
@@ -157,6 +159,8 @@ body{
     padding: 5px;
     transition: all 150ms ease-in-out;
     text-align: center;
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
 }
 
 .container-hero .card a:hover {
@@ -215,7 +219,7 @@ body{
     background-color: #1e40af;
     padding: 5px 9px;
     margin-bottom: .5rem;
-    border-radius: 3px;
+    border-radius: var(--round-corners-content);
     font-size: .76rem;
     font-weight: bold;
     text-align: center;
@@ -391,7 +395,9 @@ footer p{
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        font-weight: bold;
         transition: all 150ms ease-in-out;
+        font-family: "Outfit", sans-serif;
     }
 
     ul li a:hover {
@@ -489,11 +495,45 @@ footer p{
         margin: 14% 5% 2% 5%;
     }
 
+    .container-hero span {
+        font-size: 3rem;
+    }
+
+    .header{
+        font-size: 3rem;
+    }
+
+    .container-hero .card a {
+        font-size: 1.5rem;
+    }
+
+    .cards-section .card span{
+        font-size: 2rem;
+    }
+
     .socials {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 2rem;
+    }
+
+    .weightlifting-section .card .weightlifting h2{
+        font-size: 2rem;
+    }
+
+    .cards-section .card h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    th {
+        font-size: 1.75rem;
+    }
+    
+    td {
+        font-size: 1.5rem;
     }
 
     .cards-section .card img{
@@ -505,7 +545,7 @@ footer p{
     }
 
     .weightlifting-section .card .weightlifting span{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .weightlifting-section .card .weightlifting img{

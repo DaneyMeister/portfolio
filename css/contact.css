@@ -6,6 +6,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button {
@@ -98,6 +99,7 @@ body{
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
 }
 
 .sidebar a:hover {
@@ -157,7 +159,7 @@ div.container {
 .cards-section .card a {
     color: white;
     padding: 10px 0;
-    margin: 0 5px;
+    margin: 0 1rem;
     max-width: 500px;
     border: #fff solid 2px;
     border-radius: var(--round-corners-sections);
@@ -167,6 +169,7 @@ div.container {
     transition: all 150ms ease-in-out;
     text-align: center;
     text-decoration: none;
+    font-family: "Outfit", sans-serif;
 }
 
 .cards-section .card a:hover {
@@ -246,6 +249,8 @@ footer p{
         flex-direction: column;
         overflow: hidden;
         transition: all 150ms ease-in-out;
+        font-weight: bold;
+        font-family: "Outfit", sans-serif;
     }
 
     ul li a:hover {
@@ -321,11 +326,15 @@ footer p{
 /* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
 @media screen and (min-width: 1800px) {
     .container {
-        margin: 10% 5% 3% 5%;
+        margin: 14% 5% 5% 5%;
     }
 
     .cards-section {
         column-gap: 15rem;
+    }
+
+    .cards-section .card a {
+        font-size: 1.75rem;
     }
 
     .cards-section .card{
