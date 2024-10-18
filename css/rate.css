@@ -1,0 +1,398 @@
+/* 
+    CSS for Forward Fitness Club
+    Author: Allein Dane G. Maninang
+    Section: CS-201
+    Date: September 28, 2024
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+:root {
+    --round-corners-sections: 13px;
+    --round-corners-content: 5px;
+  }
+
+/* CSS styles for body and images */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Style rule fo rbox sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+
+/* ========================================================================================== */
+/* STYLE RULE FOR MOBILE VIEWPORT */
+
+
+/* CSS styles for hamburger menu */
+.mobile-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #27272a;
+    padding: 3%;
+    display: block;
+    z-index: 1000;
+    top: 0;
+    border-bottom: #18181B 10px solid;
+}
+
+.mobile-nav a.logo img {
+    display: block;
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.mobile-nav a.menu-icon img {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 17px;
+    max-width: 40px;
+}
+
+/* ============================================================= */
+/* show mobile class, hide tablet-desktop class and menu-links id*/
+.tablet-desktop {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 92vh;
+    width: 100%;
+    z-index: 1001;
+    background-color: #27272a;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.sidebar a {
+    width: 100%;
+    border: white solid 3px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+    background-color: #1e40af;
+}
+
+.container-hero {
+    color: #fff;
+    margin: 25% 5% 2% 5%;
+    background-color: #27272a;
+    border-radius: var(--round-corners-sections);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+.container-hero span {
+    width: 100%;
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 5px 9px;
+    border-radius: var(--round-corners-content);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .75rem 0;
+}
+
+form .submit a {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    background-color: #27272a;
+    border: white solid 3px;
+    border-radius: var(--round-corners-content);
+    padding: 5px;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+form .submit a:hover {
+    background-color: #1e40af;
+    transform: scale(1.1)
+}
+
+
+
+/* CSS styles for other sections */
+.feedback {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating .fas {
+    font-size: 20px;
+    color: #e4e4e4;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.rating {
+    font-size: 11px;
+    color: #e4e4e4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: #27272a;
+    border: 2px solid white;
+    height: 2.5rem;
+    padding: 10px;
+    border-radius: var(--round-corners-content);
+    color: white;
+}
+
+textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: #27272a;
+    border: 2px solid white;
+    height: 10rem;
+    padding: 10px;
+    border-radius: var(--round-corners-content);
+    color: white;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+}
+
+
+/* CSS styles for the footer */
+footer {
+    margin-top: 2rem;
+    background-color: #27272a;
+    width: 100%;
+    font-size: 0.5em;
+    text-align: center;
+    color: #fff;
+    padding: 2% 10%;
+    float: left;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .1rem;
+}
+
+.socials .indiv-socials img {
+    max-width: 50px;
+}
+
+footer p{
+    color: #fff;
+}
+
+/* ============================================================= */
+/* MEDIA QUERY FOR TABLET VIEWPORT */
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+@media screen and (min-width: 630px), print {
+    .tablet-desktop {
+        display: block;
+        top: 0;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for nav areas */
+    .tablet-desktop {
+        width: 100%;
+        padding: 1rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        background-color: #27272a;
+    }
+    
+    .tablet-desktop .logo img {
+        width: 90px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    ul li a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: white solid 3px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 150ms ease-in-out;
+    }
+
+    ul li a:hover {
+        background-color: #1e40af;
+        transform: scale(1.1);
+    }
+
+    .socials .indiv-socials img {
+        max-width: 75px;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    .container-hero {
+        margin: 20% 5% 9% 5%;
+        border-radius: var(--round-corners-sections);
+        padding: 1.25rem;
+    }
+
+    .container-hero span {
+        font-size: 2.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    form .submit a {
+        font-size: 2.5rem;
+    }
+
+    .rating .fas {
+        font-size: 40px;
+        margin: 10px;
+    }
+
+    .rating {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+    
+    input {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================================= */
+/* MEDIA QUERY FOR DESKTOP VIEWPORT */
+@media screen and (min-width: 1015px), print { /* 769 */
+    .container-hero {
+        margin: 11% 5% 0% 5%;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    form .submit a {
+        font-size: 1rem;
+        width: 30%;
+    }
+
+    .rating .fas {
+        font-size: 40px;
+        margin: 10px;
+    }
+
+    .rating {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+    
+    input {
+        font-size: 1rem;
+    }
+
+    textarea {
+        font-size: 1rem;
+        height: 3rem;
+    }
+}
+/* ============================================================= */
+/* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
+@media screen and (min-width: 1921px) {
+    
+}
+    
+/* ============================================================= */
+/* MEDIA QUERY FOR PRINT */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}

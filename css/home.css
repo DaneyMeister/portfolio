@@ -1,0 +1,305 @@
+/* 
+    CSS for Forward Fitness Club
+    Author: Allein Dane G. Maninang
+    Section: CS-201
+    Date: September 28, 2024
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+/* CSS styles for body and images */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+}
+
+:root {
+    --round-corners-sections: 13px;
+    --round-corners-content: 5px;
+  }
+
+/* Style rule fo rbox sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+
+/* ========================================================================================== */
+/* STYLE RULE FOR MOBILE VIEWPORT */
+
+
+/* CSS styles for hamburger menu */
+.mobile-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #27272a;
+    padding: 3%;
+    display: block;
+    z-index: 1000;
+    top: 0;
+    border-bottom: #18181B 10px solid;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav a.logo img {
+    display: block;
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+/* ============================================================= */
+/* show mobile class, hide tablet-desktop class and menu-links id*/
+.mobile {
+    display: block;
+}
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+/* CSS styles for other sections */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.hero-image2 {
+    display: none;
+}
+
+.hero-image img {
+    align-items: center;
+    max-width: 80%;
+    border-radius: 50%;
+}
+
+.container {
+    margin: 25% 5% 2% 5%;
+    position: relative;
+    align-items: center;
+}
+
+.content h1{
+    font-size: 1.6rem;
+}
+
+.content p{
+    font-size: 1rem;
+    margin-bottom: 7%;
+}
+
+.button {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    width: 14rem;
+    border: #fff solid 2px;
+    border-radius: var(--round-corners-sections);
+    background-color: #27272a;
+    font-weight: bold;
+    font-size: .9rem;
+    transition: all 150ms ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:first-child {
+    margin: 0 5px 0 0;
+}
+
+.button:last-child {
+    margin: 0 0 0 5px;
+}
+
+.button:hover {
+    background-color: #1e40af;
+    transform: scale(1.1);
+}
+
+.content .buttons{
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+
+/* CSS styles for the footer */
+footer {
+    margin-top: 2rem;
+    background-color: #27272a;
+    width: 100%;
+    font-size: 0.5em;
+    text-align: center;
+    color: #fff;
+    padding: 2% 10%;
+    float: left;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials .indiv-socials img {
+    max-width: 50px;
+}
+
+footer p{
+    color: #fff;
+}
+
+/* ============================================================= */
+/* MEDIA QUERY FOR TABLET VIEWPORT */
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+@media screen and (min-width: 630px), print {
+    .tablet-desktop {
+        display: block;
+        top: 0;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for nav areas */
+    .tablet-desktop {
+        width: 100%;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        background-color: #27272a;
+    }
+    
+    .tablet-desktop .logo img {
+        width: 90px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    ul li a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: white solid 3px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    ul li a:hover {
+        background-color: #1e40af;
+        transform: scale(1.1);
+    }
+
+    .container {
+        margin: 20% 5% 0 5%;
+    }
+
+    .hero-image img {
+        max-width: 60%;
+    }
+
+    .content h1{
+        font-size: 3rem;
+    }
+    
+    .content p{
+        font-size: 1.25rem;
+        margin-bottom: 3%;
+    }
+
+    .button {
+        width: 14rem;
+        font-size: 1.75rem;
+    }
+
+    .socials .indiv-socials img {
+        max-width: 75px;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    
+}
+
+/* ============================================================= */
+/* MEDIA QUERY FOR DESKTOP VIEWPORT */
+@media screen and (min-width: 1015px), print { /* 769 */
+    .hero-image{
+        display: none;
+    }
+
+    .hero-image2{
+        display: block;
+    }
+
+    .container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+        gap: 2rem;
+        margin: 15% 5% 0 5%;
+    }
+
+    .content h1{
+        color: #fff;
+        font-size: 3rem;
+    }
+    
+    .hero-image2 img{
+        max-width: 80%;
+        border-radius: 50%;
+        transform: translateX(15%);
+        transition: all 200ms ease-in-out;
+    }
+}
+/* ============================================================= */
+/* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
+@media screen and (min-width: 1921px) {
+    
+}
+    
+/* ============================================================= */
+/* MEDIA QUERY FOR PRINT */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
