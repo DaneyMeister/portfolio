@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<!--
+		Full Name: Allein Dane G. Maninang
+		Section: CS-201
+		Project: My Personal Portfolio
+		-->
+		<title>Rate My Portfolio</title>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/rate.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+        <script src="https://kit.fontawesome.com/6fab0974b6.js" crossorigin="anonymous"></script>
+
+	<body>
+        <div id="container">
+            <!-- Mobile Nav -->
+            <nav class="mobile-nav">
+                <a class="logo" href="home.html">
+                    <img src="images/icons/logo.png" alt="Forward-Fitness-Club-Logo">
+                </a>
+                <div class="sidebar">
+                    <a href="home.html">Home</a>
+                    <a href="education.html">Education</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact Me</a>
+                </div>
+                <a class="menu-icon" onclick="toggleSidebar()">
+                    <img src="images/icons/burger-bar.png" alt="burger-bar">
+                </a>
+             </nav>
+            
+            <!-- Tablet-Desktop Nav -->
+            <nav class="tablet-desktop">
+                <a class="logo" href="home.html">
+                    <img src="images/icons/logo.png" alt="Forward-Fitness-Club-Logo">
+                </a>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            
+            <main class="container">
+                <div class="container-hero">
+                    <span>RATE MY PORTFOLIO</span>
+                    <form>
+                        <label for="email">Email: <input id="email" name="email" type="email" required placeholder="Enter email"/></label>
+                        
+                        <div class="name">
+                            <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required placeholder="Enter first name"/></label>
+                            <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Enter last name"/></label>
+                        </div>
+                        
+                        
+                        <div class="feedback">
+                            <label>Rating:</label>
+                            <div class="rating"> 
+                                Very Dissatisfied
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                Very Satisfied
+                            </div>
+                        </div>
+
+                        <label for="bio">Comments/Suggestions:
+                            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter comments/suggestions"></textarea>
+                        </label>
+
+                        <div class="submit">
+                           <a href="thankyou.html">Submit</a> 
+                        </div>      
+                    </form>
+                </div>
+                
+            </main>
+            
+            <footer>
+                <div class="socials">
+                    <a class="indiv-socials" href="https://www.facebook.com/alleindane.maninang/">
+                        <img src="images/icons/facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a class="indiv-socials" href="https://www.instagram.com/dny_mstrr?igsh=YTc1emtqYm0yOW50">
+                        <img src="images/icons/instagram.png" alt="Instagram Logo">
+                    </a>
+                    <a class="indiv-socials" href="https://www.linkedin.com/in/allein-dane-maninang-1b2487317/">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn Logo">
+                    </a>
+                    <a class="indiv-socials" href="https://github.com/DaneyMeister">
+                        <img src="images/icons/github.png" alt="GitHub Logo">
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; Copyright 2024. All rights reserved. Created by Allein Dane G. Maninang</p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="scripts/stars.js"></script>
+        <script src="scripts/script.js"></script>
+	</body>
+</html>
