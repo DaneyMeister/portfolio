@@ -30,6 +30,15 @@ body{
     color: #fff;
 }
 
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+    position: fixed;
+    left: 300px;
+    top: 200px;
+}
+
 /* Style rule fo rbox sizing applies to all elements */
 * {
     box-sizing: border-box;
@@ -202,6 +211,11 @@ footer p{
 /* MEDIA QUERY FOR TABLET VIEWPORT */
 /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 @media screen and (min-width: 630px), print {
+    .blur{
+        left: 700px;
+        top: 200px;
+    }
+
     .tablet-desktop {
         display: block;
         top: 0;
@@ -281,7 +295,7 @@ footer p{
 
     footer {
         font-size: 1em;
-        height: 70px;
+        height: 85px;
     }
 
     /* Tablet Viewport: Style rules for main content area */
@@ -291,6 +305,11 @@ footer p{
 /* ============================================================= */
 /* MEDIA QUERY FOR DESKTOP VIEWPORT */
 @media screen and (min-width: 1015px), print { /* 769 */
+    .blur{
+        left: 1200px;
+        top: 250px;
+    }
+
     .hero-image{
         display: none;
     }
@@ -325,6 +344,12 @@ footer p{
 /* ============================================================= */
 /* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
 @media screen and (min-width: 1800px) {
+    .blur{
+        box-shadow: 0 0 1000px 75px rgba(29, 78, 216, 0.5);
+        left: 1800px;
+        top: 250px;
+    }
+    
     .container {
         margin: 14% 5% 5% 5%;
     }
